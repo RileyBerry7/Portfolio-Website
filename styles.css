@@ -1,0 +1,127 @@
+/* styles.css */
+.vertical-menu {
+    width: 50%;
+    height: auto;
+    overflow-y: auto;
+    float: right;
+}
+
+.vertical-menu a {
+    color: #0074D9;
+    text-decoration: underline;
+}
+
+.vertical-menu h2, .vertical-menu h3 {
+    background-color: rgb(20, 25, 31);
+    color: #fff;
+    font-size: 30px;
+    margin: 10px; 
+    padding: 5px;
+}
+
+.vertical-menu p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 10px; 
+    padding: 5px; 
+    cursor: text;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto, sans-serif';
+}
+
+.row {
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start; 
+    height: 25vh; 
+    padding: 0px; 
+    position: fixed;
+    top: 50px;
+    left: 50px; 
+    width: 45%; 
+}
+
+.col {
+    flex-basis: auto;
+    text-align: center; 
+}
+
+body{
+    background-color: rgb(2, 14, 17);
+}
+
+h1 {
+    color: #fff;
+    font-size: 100px; 
+    margin: 10px; 
+}
+
+h2{
+    background-color: rgb(20, 25, 31);
+    color: #fff;
+    font-size: 30px; 
+    margin: 10px;
+}
+
+h3{
+    background-color: rgb(20, 25, 31);
+    color: #fff;
+    font-size: 25px; 
+    margin: 5px;
+}
+
+p {
+    color: #fff;
+    background-color: rgb(20, 25, 31);;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 10px; 
+}
+
+.aboutMeButton{
+    font-size: 20px;
+    line-height: 21px;
+    color: white;
+    background-color: transparent;
+   padding: 5px;
+   cursor: pointer;
+   border: 2px solid gray;
+   box-shadow: white, 4px 4px 0 0 black;
+   transition-duration: 200ms;
+}
+
+.aboutMeButton:hover{
+    box-shadow: 3px 3px rgb(0, 0, 0), 6px 6px 0 0 darkcyan;
+    transform: translate(-2px, -2px);
+}
+
+.left-aligned {
+    text-align: left;
+    display: block;
+    margin-left: 43%; 
+}
+
+#fixed-image, #fixed-image2 {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    height: auto; 
+    transition: filter 0.3s;
+    z-index: 9999;
+}
+
+#fixed-image {
+    left: 0;
+}
+
+#fixed-image2 {
+    left: 100px;
+}
+
+#fixed-image:hover, #fixed-image2:hover {
+    filter: hue-rotate(0deg); 
